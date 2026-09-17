@@ -3,18 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>موقعي</title>
+
+    <title>Game Hub | متجر الألعاب</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>موقعي الاحترافي</h1>
-        <p>أهلاً بك في موقعي 👋</p>
-        <button onclick="welcome()">اضغط هنا</button>
-    </header>
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="logo">GAME HUB</div>
+
+        <div class="nav-links">
+            <a href="#home">الرئيسية</a>
+            <a href="#arc">ARC Raiders</a>
+            <a href="#crashout">CRASHOUT</a>
+            <a href="#payment">الدفع</a>
+        </div>
+    </nav>
+
+
+    <!-- الصفحة الرئيسية -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <span class="badge">🎮 GAMING PLATFORM</span>
+
+            <h1>
+                عالم الألعاب
+                <br>
+                <span>بين يديك</span>
+            </h1>
+
+            <p>
+                اكتشف خدمات ومحتوى الألعاب في مكان واحد
+            </p>
+
+            <div class="buttons">
+
+                <a href="#arc" class="main-btn">
+                    ARC Raiders
+                </a>
+
+                <a href="#crashout" class="second-btn">
+                    CRASHOUT
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- الأقسام -->
+    <section class="sections">
+
+        <h2>أقسام الموقع</h2>
+
+        <p class="subtitle">
+            اختر القسم الذي تريد الدخول إليه
+        </p>
+
+
+        <div class="cards">
+
+            <!-- ARC Raiders -->
+            <div id="arc" class="card">
+
+                <div class="icon">🚀</div>
+
+                <h3>ARC Raiders</h3>
+
+                <p>
+                    قسم خاص بلعبة ARC Raiders
+                    وخدماتها ومحتواها.
+                </p>
+
+                <button onclick="openSection('ARC Raiders')">
+                    دخول القسم
+                </button>
+
+            </div>
+
+
+            <!-- CRASHOUT -->
+            <div id="crashout" class="card">
+
+                <div class="icon">💥</div>
+
+                <h3>CRASHOUT</h3>
+
+                <p>
+                    اكتشف قسم CRASHOUT
+                    وجميع الخدمات المتوفرة.
+                </p>
+
+                <button onclick="openSection('CRASHOUT')">
+                    دخول القسم
+                </button>
+
+            </div>
+
+
+            <!-- الدفع -->
+            <div id="payment" class="card payment-card">
+
+                <div class="icon">💳</div>
+
+                <h3>الدفع</h3>
+
+                <p>
+                    ادخل إلى قسم الدفع لإتمام
+                    عمليات الشراء.
+                </p>
+
+                <button onclick="openPayment()">
+                    الدفع الآن
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- معلومات -->
+    <section class="about">
+
+        <h2>ليش تختارنا؟</h2>
+
+        <div class="features">
+
+            <div>
+                <span>⚡</span>
+                <h3>سرعة</h3>
+                <p>خدمة سريعة وسهلة الاستخدام.</p>
+            </div>
+
+            <div>
+                <span>🔒</span>
+                <h3>أمان</h3>
+                <p>نهتم بحماية معلومات المستخدمين.</p>
+            </div>
+
+            <div>
+                <span>📱</span>
+                <h3>متوافق مع الجوال</h3>
+                <p>الموقع مصمم للعمل بشكل ممتاز على الهاتف.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- الفوتر -->
+    <footer>
+
+        <div class="footer-logo">
+            GAME HUB
+        </div>
+
+        <p>
+            © 2026 GAME HUB - جميع الحقوق محفوظة
+        </p>
+
+    </footer>
+
 
     <script src="script.js"></script>
+
 </body>
 </html>
