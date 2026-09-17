@@ -1,10 +1,18 @@
+function buyProduct(product) {
+    alert(
+        "🛒 المنتج: " + product +
+        "\n\n💰 هذه عملية شراء تجريبية فقط." +
+        "\n\nلن يتم خصم أي مبلغ."
+    );
+}
+
 function openSection(game) {
-    alert("أهلًا بك في قسم " + game + " 🎮");
+    alert("🎮 قسم " + game);
 }
 
 function openPayment() {
-    alert("قسم الدفع 💳\nسيتم إضافة بوابة الدفع هنا قريبًا.");
-}
-function buyProduct(product) {
-    alert("🛒 المنتج: " + product + "\n\nهذه عملية شراء تجريبية فقط.");
+    alert(
+        "💳 قسم الدفع" +
+        "\n\nالدفع غير مفعل حاليًا."
+    );
 }
