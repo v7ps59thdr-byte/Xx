@@ -1,23 +1,151 @@
-<div id="arc" class="card">
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <img 
-        src="https://placehold.co/600x350/111722/00d9ff?text=BOBCAT"
-        alt="بوبكات"
-        style="width:100%; border-radius:12px; margin-bottom:20px;"
-    >
+    <title>GAME HUB</title>
 
-    <div class="icon">🚀</div>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <h3>بوبكات</h3>
+<body>
 
-    <p>
-        منتج تجريبي لـ ARC Raiders
-    </p>
+    <nav class="navbar">
+        <div class="logo">GAME HUB</div>
 
-    <h3>10 ريال</h3>
+        <div class="nav-links">
+            <a href="#home">الرئيسية</a>
+            <a href="#arc">ARC Raiders</a>
+            <a href="#crashout">CRASHOUT</a>
+            <a href="#payment">الدفع</a>
+        </div>
+    </nav>
 
-    <button onclick="buyProduct('بوبكات')">
-        شراء تجريبي
-    </button>
 
-</div>
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <span class="badge">🎮 GAMING STORE</span>
+
+            <h1>
+                متجر الألعاب
+                <br>
+                <span>GAME HUB</span>
+            </h1>
+
+            <p>
+                منتجات وخدمات الألعاب في مكان واحد
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="sections">
+
+        <h2>ARC Raiders</h2>
+
+        <p class="subtitle">
+            منتجات ARC Raiders
+        </p>
+
+
+        <div class="cards">
+
+            <div id="arc" class="card">
+
+                <img
+                    src="https://placehold.co/600x350/111722/00d9ff?text=BOBCAT"
+                    alt="بوبكات"
+                    style="width:100%; border-radius:12px; margin-bottom:20px;"
+                >
+
+                <h3>بوبكات</h3>
+
+                <p>
+                    منتج تجريبي لـ ARC Raiders
+                </p>
+
+                <div class="price">
+                    10 ريال
+                </div>
+
+                <button onclick="buyProduct('بوبكات')">
+                    شراء تجريبي
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="sections">
+
+        <h2 id="crashout">CRASHOUT</h2>
+
+        <p class="subtitle">
+            قسم CRASHOUT
+        </p>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <div class="icon">💥</div>
+
+                <h3>CRASHOUT</h3>
+
+                <p>
+                    المنتجات والخدمات الخاصة باللعبة.
+                </p>
+
+                <button onclick="openSection('CRASHOUT')">
+                    دخول القسم
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="payment" class="about">
+
+        <h2>💳 الدفع</h2>
+
+        <p>
+            هذا القسم مخصص للدفع.
+        </p>
+
+        <br>
+
+        <button onclick="openPayment()">
+            تجربة الدفع
+        </button>
+
+    </section>
+
+
+    <footer>
+
+        <div class="footer-logo">
+            GAME HUB
+        </div>
+
+        <p>
+            © 2026 GAME HUB
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
