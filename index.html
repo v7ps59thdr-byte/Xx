@@ -4,148 +4,553 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>GAME HUB</title>
+    <title>GAME HUB | متجر الألعاب</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <nav class="navbar">
-        <div class="logo">GAME HUB</div>
+<!-- ================= NAVBAR ================= -->
 
-        <div class="nav-links">
-            <a href="#home">الرئيسية</a>
-            <a href="#arc">ARC Raiders</a>
-            <a href="#crashout">CRASHOUT</a>
-            <a href="#payment">الدفع</a>
-        </div>
+<header class="navbar">
+
+    <a href="#home" class="logo">
+        GAME <span>HUB</span>
+    </a>
+
+    <nav class="menu">
+
+        <a href="#home">الرئيسية</a>
+
+        <a href="#arc">ARC Raiders</a>
+
+        <a href="#crashout">CRASHOUT</a>
+
+        <a href="#best">الأكثر مبيعاً</a>
+
+        <a href="#faq">الأسئلة الشائعة</a>
+
     </nav>
 
+    <button class="cart" onclick="openCart()">
+        🛒 السلة
+        <span id="cartCount">0</span>
+    </button>
 
-    <section id="home" class="hero">
+</header>
 
-        <div class="hero-content">
 
-            <span class="badge">🎮 GAMING STORE</span>
+<!-- ================= HERO ================= -->
 
-            <h1>
-                متجر الألعاب
-                <br>
-                <span>GAME HUB</span>
-            </h1>
+<section id="home" class="hero">
 
-            <p>
-                منتجات وخدمات الألعاب في مكان واحد
-            </p>
+    <div class="hero-text">
+
+        <div class="tag">
+            🎮 GAME STORE
+        </div>
+
+        <h1>
+            كل ما تحتاجه
+            <br>
+            <span>في مكان واحد</span>
+        </h1>
+
+        <p>
+            متجر متخصص في منتجات وخدمات الألعاب.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#arc" class="primary-btn">
+                تصفح المنتجات
+            </a>
+
+            <a href="#best" class="outline-btn">
+                الأكثر مبيعاً
+            </a>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <section class="sections">
+<!-- ================= CATEGORIES ================= -->
 
-        <h2>ARC Raiders</h2>
+<section class="section">
 
-        <p class="subtitle">
+    <div class="section-title">
+
+        <span>تصفح</span>
+
+        <h2>الأقسام</h2>
+
+        <p>
+            اختر اللعبة التي تبحث عنها
+        </p>
+
+    </div>
+
+
+    <div class="categories">
+
+        <a href="#arc" class="category">
+
+            <div class="category-icon">
+                🚀
+            </div>
+
+            <h3>ARC Raiders</h3>
+
+            <p>
+                منتجات وخدمات ARC Raiders
+            </p>
+
+        </a>
+
+
+        <a href="#crashout" class="category">
+
+            <div class="category-icon">
+                💥
+            </div>
+
+            <h3>CRASHOUT</h3>
+
+            <p>
+                منتجات وخدمات CRASHOUT
+            </p>
+
+        </a>
+
+
+        <a href="#payment" class="category">
+
+            <div class="category-icon">
+                💳
+            </div>
+
+            <h3>الدفع</h3>
+
+            <p>
+                إتمام عملية الشراء
+            </p>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= BEST SELLERS ================= -->
+
+<section id="best" class="section dark-section">
+
+    <div class="section-title">
+
+        <span>الأكثر طلباً</span>
+
+        <h2>الأكثر مبيعاً 🔥</h2>
+
+        <p>
+            المنتجات الأكثر طلباً في المتجر
+        </p>
+
+    </div>
+
+
+    <div class="products">
+
+
+        <!-- PRODUCT -->
+
+        <div class="product-card">
+
+            <div class="product-image">
+
+                <img
+                    src="https://placehold.co/700x450/111722/00d9ff?text=BOBCAT"
+                    alt="Bobcat"
+                >
+
+                <span class="product-badge">
+                    جديد
+                </span>
+
+            </div>
+
+
+            <div class="product-info">
+
+                <small>
+                    ARC Raiders
+                </small>
+
+                <h3>
+                    Bobcat
+                </h3>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        10 ريال
+                    </strong>
+
+                    <button
+                        onclick="addToCart('Bobcat', 10)"
+                    >
+                        شراء
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- ================= ARC RAIDERS ================= -->
+
+<section id="arc" class="section">
+
+    <div class="section-title">
+
+        <span>GAME</span>
+
+        <h2>ARC Raiders 🚀</h2>
+
+        <p>
             منتجات ARC Raiders
         </p>
 
+    </div>
 
-        <div class="cards">
 
-            <div id="arc" class="card">
+    <div class="products">
+
+
+        <div class="product-card">
+
+            <div class="product-image">
 
                 <img
-                    src="https://placehold.co/600x350/111722/00d9ff?text=BOBCAT"
-                    alt="بوبكات"
-                    style="width:100%; border-radius:12px; margin-bottom:20px;"
+                    src="https://placehold.co/700x450/111722/00d9ff?text=BOBCAT"
+                    alt="Bobcat"
                 >
 
-                <h3>بوبكات</h3>
+            </div>
 
-                <p>
-                    منتج تجريبي لـ ARC Raiders
-                </p>
 
-                <div class="price">
-                    10 ريال
+            <div class="product-info">
+
+                <small>
+                    ARC Raiders
+                </small>
+
+                <h3>
+                    Bobcat
+                </h3>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        10 ريال
+                    </strong>
+
+                    <button
+                        onclick="addToCart('Bobcat', 10)"
+                    >
+                        إضافة للسلة
+                    </button>
+
                 </div>
 
-                <button onclick="buyProduct('بوبكات')">
-                    شراء تجريبي
-                </button>
-
             </div>
 
         </div>
 
-    </section>
+
+    </div>
+
+</section>
 
 
-    <section class="sections">
+<!-- ================= CRASHOUT ================= -->
 
-        <h2 id="crashout">CRASHOUT</h2>
+<section id="crashout" class="section dark-section">
 
-        <p class="subtitle">
-            قسم CRASHOUT
-        </p>
+    <div class="section-title">
 
-        <div class="cards">
+        <span>GAME</span>
 
-            <div class="card">
-
-                <div class="icon">💥</div>
-
-                <h3>CRASHOUT</h3>
-
-                <p>
-                    المنتجات والخدمات الخاصة باللعبة.
-                </p>
-
-                <button onclick="openSection('CRASHOUT')">
-                    دخول القسم
-                </button>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <section id="payment" class="about">
-
-        <h2>💳 الدفع</h2>
+        <h2>CRASHOUT 💥</h2>
 
         <p>
-            هذا القسم مخصص للدفع.
+            منتجات CRASHOUT
         </p>
 
-        <br>
+    </div>
 
-        <button onclick="openPayment()">
-            تجربة الدفع
+
+    <div class="empty">
+
+        <div>
+            💥
+        </div>
+
+        <h3>
+            قريباً
+        </h3>
+
+        <p>
+            سيتم إضافة المنتجات قريباً.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FEATURES ================= -->
+
+<section class="features">
+
+    <div>
+
+        <span>⚡</span>
+
+        <h3>
+            سرعة
+        </h3>
+
+        <p>
+            تجربة شراء سهلة وسريعة.
+        </p>
+
+    </div>
+
+
+    <div>
+
+        <span>🔒</span>
+
+        <h3>
+            أمان
+        </h3>
+
+        <p>
+            نهتم بأمان المستخدمين.
+        </p>
+
+    </div>
+
+
+    <div>
+
+        <span>📱</span>
+
+        <h3>
+            للجوال
+        </h3>
+
+        <p>
+            تصميم مناسب للجوال.
+        </p>
+
+    </div>
+
+
+    <div>
+
+        <span>🎮</span>
+
+        <h3>
+            ألعاب
+        </h3>
+
+        <p>
+            منتجات ألعاب في مكان واحد.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FAQ ================= -->
+
+<section id="faq" class="section">
+
+    <div class="section-title">
+
+        <span>مساعدة</span>
+
+        <h2>
+            الأسئلة الشائعة
+        </h2>
+
+    </div>
+
+
+    <div class="faq">
+
+        <details>
+
+            <summary>
+                كيف أشتري منتج؟
+            </summary>
+
+            <p>
+                اختر المنتج ثم اضغط إضافة للسلة.
+            </p>
+
+        </details>
+
+
+        <details>
+
+            <summary>
+                هل الدفع متاح؟
+            </summary>
+
+            <p>
+                قسم الدفع قيد التجهيز حالياً.
+            </p>
+
+        </details>
+
+
+        <details>
+
+            <summary>
+                هل المنتجات حقيقية؟
+            </summary>
+
+            <p>
+                المنتجات المعروضة حالياً تجريبية حتى يتم تجهيز المتجر.
+            </p>
+
+        </details>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PAYMENT ================= -->
+
+<section id="payment" class="payment">
+
+    <div>
+
+        <span>
+            💳
+        </span>
+
+        <h2>
+            جاهز للشراء؟
+        </h2>
+
+        <p>
+            أضف المنتجات إلى السلة ثم أكمل عملية الدفع.
+        </p>
+
+        <button onclick="openCart()">
+            فتح السلة 🛒
         </button>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <footer>
+<!-- ================= FOOTER ================= -->
 
-        <div class="footer-logo">
-            GAME HUB
+<footer>
+
+    <div class="footer-logo">
+        GAME HUB
+    </div>
+
+    <div class="footer-links">
+
+        <a href="#home">
+            الرئيسية
+        </a>
+
+        <a href="#arc">
+            ARC Raiders
+        </a>
+
+        <a href="#crashout">
+            CRASHOUT
+        </a>
+
+        <a href="#faq">
+            الأسئلة الشائعة
+        </a>
+
+    </div>
+
+    <p>
+        © 2026 GAME HUB
+    </p>
+
+</footer>
+
+
+<!-- ================= CART ================= -->
+
+<div id="cart" class="cart-modal">
+
+    <div class="cart-box">
+
+        <button
+            class="close"
+            onclick="closeCart()"
+        >
+            ×
+        </button>
+
+        <h2>
+            🛒 سلة المشتريات
+        </h2>
+
+        <div id="cartItems">
+            السلة فارغة
         </div>
 
-        <p>
-            © 2026 GAME HUB
-        </p>
+        <div class="cart-total">
 
-    </footer>
+            المجموع:
+            <strong id="cartTotal">
+                0 ريال
+            </strong>
+
+        </div>
+
+        <button
+            class="checkout"
+            onclick="checkout()"
+        >
+            إتمام الطلب
+        </button>
+
+    </div>
+
+</div>
 
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
